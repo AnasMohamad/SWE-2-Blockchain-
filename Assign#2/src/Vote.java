@@ -1,9 +1,10 @@
 import java.io.UnsupportedEncodingException;
+
 import java.security.*;
 import java.security.spec.PKCS8EncodedKeySpec;
 import java.util.Base64;
 
-public class Vote {
+public class Vote implements java.io.Serializable{
 
 	
 	public String VoteId;

@@ -47,22 +47,25 @@ boolean	isChainValid(){
 	}
 
 
-	public void add_block(Vote data) 
+	public Block add_block(Vote data) 
 	{
 		int SIZE = Chain.size();
 		
 		if(SIZE == 0) 
 		{
-			Chain.add(new Block(data , "000000000000000000000000000000000000000" ));
+			Block b = new Block(data , "00000000000000000000000000000000000");
+			Chain.add(b);
+			return b;
 		}
 		
 		else 
 		{
-			Chain.add(new Block(data , Chain.get(SIZE-1).hash) );
+			Block b = new Block(data , Chain.get(SIZE-1).hash);
+			Chain.add(b);
+			return b;
+			
 
-		}
-
-	
+		} 
 		
 		
     }

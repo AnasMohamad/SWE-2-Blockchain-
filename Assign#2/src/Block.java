@@ -2,7 +2,7 @@ import java.security.MessageDigest;
 import java.util.Date;
 import com.google.gson.*;
 
-public  class Block 
+public  class Block implements java.io.Serializable
 {
 	public String hash;
 	public String prev_hash;

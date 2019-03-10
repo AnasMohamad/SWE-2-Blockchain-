@@ -5,7 +5,7 @@ import java.util.Base64;
 //person , voter . etc.
 
 
-public class Wallet {
+public class Wallet implements java.io.Serializable {
 	public String id;
 	public PrivateKey priv_k;
 	public PublicKey  pub_k ;
